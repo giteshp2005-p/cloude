@@ -1,0 +1,298 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pune Crime Branch - Demo Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f2f4f7;
+            color: #222;
+        }
+
+        header {
+            background: #102747;
+            color: white;
+            padding: 22px;
+            text-align: center;
+        }
+
+        header h1 {
+            font-size: 30px;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            color: #d7e4f5;
+        }
+
+        nav {
+            background: #b82025;
+            padding: 14px;
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: linear-gradient(
+                rgba(9, 29, 55, 0.85),
+                rgba(9, 29, 55, 0.85)
+            );
+            color: white;
+            text-align: center;
+            padding: 75px 20px;
+        }
+
+        .hero h2 {
+            font-size: 36px;
+            margin-bottom: 15px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #d9272e;
+            color: white;
+            padding: 13px 22px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .container {
+            max-width: 1100px;
+            margin: 35px auto;
+            padding: 20px;
+        }
+
+        .container h2 {
+            text-align: center;
+            margin-bottom: 25px;
+            color: #102747;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(
+                auto-fit, minmax(220px, 1fr)
+            );
+            gap: 20px;
+        }
+
+        .card {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            box-shadow: 0 3px 10px #00000015;
+            border-top: 4px solid #b82025;
+        }
+
+        .card h3 {
+            margin-bottom: 12px;
+            color: #102747;
+        }
+
+        .contact {
+            background: white;
+            padding: 25px;
+            border-radius: 8px;
+            max-width: 650px;
+            margin: auto;
+        }
+
+        .contact input,
+        .contact select,
+        .contact textarea {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 15px;
+        }
+
+        .contact button {
+            background: #102747;
+            color: white;
+            padding: 13px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background: #102747;
+            color: white;
+            text-align: center;
+            padding: 22px;
+            margin-top: 40px;
+        }
+
+        .notice {
+            color: #a21b20;
+            font-weight: bold;
+            text-align: center;
+            margin: 20px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>🚔 PUNE CRIME BRANCH</h1>
+        <p>Public Safety • Crime Prevention • Citizen Awareness</p>
+        <p>STUDENT DEMO WEBSITE — NOT AN OFFICIAL POLICE WEBSITE</p>
+    </header>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#safety">Safety Tips</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <section class="hero" id="home">
+        <h2>Welcome to Pune Crime Branch</h2>
+        <p>Promoting public awareness and a safer community.</p>
+        <a class="btn"
+           href="https://www.punepolice.gov.in/">
+           Official Pune Police Website
+        </a>
+    </section>
+
+    <section class="container" id="services">
+        <h2>Our Services</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>🔍 Crime Prevention</h3>
+                <p>Learn how to stay alert and help prevent crime
+                   in your community.</p>
+            </div>
+
+            <div class="card">
+                <h3>💻 Cyber Crime Awareness</h3>
+                <p>Understand online fraud, phishing, and
+                   digital safety practices.</p>
+            </div>
+
+            <div class="card">
+                <h3>🛡️ Public Safety</h3>
+                <p>Find useful safety guidance for citizens,
+                   families, and students.</p>
+            </div>
+
+            <div class="card">
+                <h3>📞 Emergency Help</h3>
+                <p>For an emergency in India, call 112.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="safety">
+        <h2>Important Safety Tips</h2>
+
+        <div class="cards">
+            <div class="card">
+                <h3>Online Safety</h3>
+                <p>Never share your OTP, passwords, or banking PIN
+                   with unknown people.</p>
+            </div>
+
+            <div class="card">
+                <h3>Personal Safety</h3>
+                <p>Stay alert in public places and contact
+                   emergency services when necessary.</p>
+            </div>
+
+            <div class="card">
+                <h3>Report Suspicious Activity</h3>
+                <p>Contact the appropriate police authority
+                   rather than confronting suspects yourself.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="container" id="contact">
+        <h2>Citizen Enquiry Form</h2>
+
+        <div class="contact">
+            <p class="notice">
+                Demo form only. Do not enter real personal information.
+            </p>
+
+            <form id="enquiryForm">
+                <input type="text" placeholder="Your Name"
+                       required>
+
+                <input type="email" placeholder="Email Address"
+                       required>
+
+                <select required>
+                    <option value="">Select Enquiry Type</option>
+                    <option>Cyber Safety</option>
+                    <option>General Information</option>
+                    <option>Public Safety</option>
+                </select>
+
+                <textarea rows="5"
+                          placeholder="Enter your enquiry"
+                          required></textarea>
+
+                <button type="submit">Submit Enquiry</button>
+            </form>
+
+            <p id="message"></p>
+
+            <p style="margin-top: 20px;">
+                Official website:
+                <a href="https://www.punepolice.gov.in/">
+                    Pune City Police
+                </a>
+            </p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Pune Crime Branch — Student Project</p>
+        <p>For emergencies, call 112.</p>
+    </footer>
+
+    <script>
+        document.getElementById("enquiryForm")
+            .addEventListener("submit", function(event) {
+                event.preventDefault();
+
+                document.getElementById("message").textContent =
+                    "Demo only: No enquiry has been sent to the police.";
+
+                this.reset();
+            });
+    </script>
+
+</body>
+</html>
